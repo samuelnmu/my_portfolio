@@ -1,7 +1,7 @@
 body{
     /* background-color: beige; */
     margin: 0;
-    height: 200vh;
+    height: 800vh;
 }
 
 
@@ -112,15 +112,45 @@ a {
 
 /* About me section */
 .about-me{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */ /* This is a testing color */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .about-me1{
-    background-color: bisque;
+    /* background-color: bisque; */ /* This is a testing color */
+    width: 37rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 4rem auto;
 }
-.services{
-    justify-content: center;
-    display: flexbox;
+.about-me1 h1{
+    text-align: center;
+}
+
+/* Service Section */
+.service-section{
+    /* background-color: rgb(238, 15, 15); */ /* This is a testing color */
+    padding: 2rem;
+    text-align: center;
+}
+.services-grid{
+    display: grid;
+    /* background-color: white;  */
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.service{
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+.service-maintenance{
+    grid-column: 1 / -1;
+    width: 400px;
+    margin: 1rem auto;
+    border-radius: 10px;
+    background-color: #f5f5f5;
 }
