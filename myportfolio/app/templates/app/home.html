@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{% static 'app/css/home_page.css' %}">
+</head>
+
+<body>
+    {% block content %}
+    <!--Navigation Links -->
+    <nav class="nav-links">
+        <ul>
+            <li class="nav-link"><a href="./about.html">About Me</a></li>
+            <li class="nav-link"><a href="./skills.html">Skills</a></li>
+            <li class="nav-link"><a href="./portfolio.html">Portfolio</a></li>
+            <li class="nav-link" id="arrow"><a href="">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Photo -->
+    <div class="image-holder">
+        <img class="profile" src="{% static 'app/images/prof2.png' %}" alt="profile photo" width="378" height="387">
+        <div class="text-content">
+            <h3>Hi, I am</h3>
+            <h1>Samuel Ngige Mungai</h1>
+            <h2>Software Engineer</h2>
+            <div class="icons">
+                <a href="https://github.com/samuelnmu"><img src="{% static 'app/images/ghub-Photoroom.png' %}" alt="GitHub Logo" width="37" height="35"></a>
+                <a href="www.linkedin.com/in/samuel-mungai-94056325b"><img src="{% static 'app/images/imageslkn-Photoroom.png' %}" alt="LinkedIn Logo" width="37" height="35"></a>
+                <a href="https://x.com/fintechsam_254"><img src="{% static 'app/images/x.png' %}" alt="X Logo" width="37" height="35"></a>
+                <p >Check Me Out!</p>
+            </div>
+        </div>
+    </div>    
+    <div class="mission">
+        <h3>My Mission:</h3>
+        <p>
+            I believe in the power of technology to empower businesses and communities. As a passionate software engineer, <br> I'm
+            driven by the challenge of solving problems and building systems from the ground up. My work is fueled by curiosity and
+            strengthened by resilience. <br> I thrive on learning, adapting, and creating tools that make a real difference.
+        </p>
+    </div>
+
+    <!-- About section -->
+     <div class="about-me">
+
+       <div class="about-me1">
+        <h1>About Me</h1>
+        <p>Consise about</p>
+        <h3>Explore</h3>
+
+        <div class="services">
+            <h1>Design</h1>
+            <p>Full stack Software Developer | Data Analyst | Database Administrator <br> | Cybersecurity Analyst | Financial Markets
+            analyst | Sale's Agent | UI/UX Designer <br>| Graphic Designer | Plumber | Driver.
+            </p>
+            
+            <h1>Development</h1>
+            <p>Full stack Software Developer | Data Analyst | Database <br>Administrator | Cybersecurity Analyst | Financial Markets
+            analyst | Sale's Agent | <br>UI/UX Designer | Graphic Designer | Plumber | Driver.
+            </p>
+            
+            <h1>Maintenance</h1>
+            <p>Full stack Software Developer | Data Analyst | Database Administratorbr  <br> | Cybersecurity Analyst | Financial Markets
+            analyst | <br>Sale's Agent | UI/UX Designer | Graphic Designer | Plumber | Driver.
+            </p>
+        </div>
+       </div>
+
+     </div>
+
+    {% endblock %}
+</body>
+
+</html>

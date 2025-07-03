@@ -1,0 +1,126 @@
+body{
+    /* background-color: beige; */
+    margin: 0;
+    height: 200vh;
+}
+
+
+/* Styling the nav container */
+nav {
+    border-bottom: 1px solid black;
+    display: flex;
+    /* Use Flexbox for layout */
+    justify-content: flex-end;
+    /* Align items (nav-links) to the right */
+    padding: 10px;
+}
+
+/* Remove default list styling */
+.nav-links ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+
+    /* Use Flexbox to align list items horizontally */
+}
+
+/* Styling for each link item */
+.nav-link {
+    display: inline-block;
+    padding: 0 25px;
+    /* Add more padding for spacing between links */
+}
+
+/* Styling for anchor (link) tags */
+a {
+    text-decoration: none;
+    /* Remove the default underline */
+    color: black;
+    /* Link color */
+    font-size: 16px;
+    /* Font size */
+}
+
+/* Adding the ">" symbol after the last link */
+#arrow a::after {
+    display: inline-block;
+    color: black;
+    content: ">";
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.image-holder {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* Space between image and text */
+    padding: 20px;
+}
+
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: blue; */
+    margin-left: 10rem;
+}
+
+.text-content h1 {
+    margin: 15px 0;
+    font-size: 4rem;
+    margin-left: 2rem;
+    margin-top: 0;
+}
+.text-content h2{
+    font-size: 1.7rem;
+    margin-left: 8rem;
+    margin-top: 0;
+}
+.text-content h3{
+    font-size: 2rem;
+}
+
+/* Social media icons  */
+.icons{
+    /* background-color: blueviolet; */
+    display: flex;
+    margin-left: 3rem;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 2rem;
+}
+.icons p{
+    margin-left: 6rem;
+}
+
+/* Mission */
+.mission{
+    background-color: #4b5563;
+    height: 7rem;
+}
+.mission h3 {
+    color: white;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+}
+.mission p{
+    color: white;
+    margin-left: 5rem;
+}
+
+/* About me section */
+.about-me{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-me1{
+    background-color: bisque;
+}
+.services{
+    justify-content: center;
+    display: flexbox;
+}
