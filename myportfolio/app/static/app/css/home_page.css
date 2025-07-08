@@ -1,7 +1,6 @@
 body{
     /* background-color: beige; */
     margin: 0;
-    height: 800vh;
 }
 
 
@@ -99,15 +98,16 @@ a {
 .mission-1 h2{
     text-align: center;
     font-family: "Inter", sans-serif;
+    margin-top: 4rem;
 }
 .mission p{
     color: white;
     font-family: "open Sans", sans-serif;
 }
 .mission{
-    background-color: #4b5563;
+    background-color: #033860;
     text-align: center;
-    margin: auto;
+    margin: 2rem auto;
     padding: 1rem;
 }
 
@@ -121,8 +121,7 @@ a {
 .about-me1{
     /* background-color: bisque; */ /* This is a testing color */
     width: 37rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1.5rem;
     margin: 4rem auto;
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -156,4 +155,65 @@ a {
     margin: 1rem auto;
     border-radius: 10px;
     background-color: #f5f5f5;
+    padding: 1.5rem;
+}
+
+/* Skills section */
+.skills{
+    text-align: center;
+}
+.skills h3{
+    text-align: start;
+    margin-left: 3rem;
+}
+.skills h1{
+    border-top: 1px solid black;
+    padding: 1rem;
+    margin: 0;
+}
+.skills-grid img{
+    padding: 2rem;
+    border-radius: 40px;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* background-color: blue; */
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+/* Portfolio section */
+.portfolio{
+    border-top: 1px solid black;
+}
+.portfolio h1{
+    text-align: center;
+}
+.holder{
+    display: flex;
+    /* background-color: #f5f5f5; */
+    max-width: 1100px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.portfolio img{
+    width: 200;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.text{
+    display: inline-block;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.text p{
+    margin: 2rem;
 }
